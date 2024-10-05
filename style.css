@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to right, #f8efd4, #d6bfa7); /* Soft gradient for background */
+    font-family: 'Arial', sans-serif;
+  }
+  .game-board {
+    background-color: #f1d9b5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .box {
+    background-color: #e9cba4;
+    transition: background-color 0.2s ease;
+    width: 100%; /* Let the width be responsive */
+    aspect-ratio: 1/1; /* Maintain square shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw; /* Adjust the font size dynamically */
+  }
+  .box:hover {
+    background-color: #d8b389;
+  }
+  .winner {
+    background-color: #d8b389 !important;
+  }
+  @media (min-width: 640px) {
+    .game-board {
+      grid-gap: 15px; /* Increase spacing on larger screens */
+    }
+    .box {
+      font-size: 3vw; /* Smaller text on larger screens */
+    }
+  }
+  @media (min-width: 1024px) {
+    .game-board {
+      width: 400px; /* Fix the board width on larger screens */
+      height: 400px;
+    }
+    .box {
+      font-size: 2vw; /* Further adjust font size */
+    }
+  }

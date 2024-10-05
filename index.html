@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Tic Tac Toe</title>
+  <script src="script.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col items-center justify-center h-screen p-4">
+  <div class="text-center mb-6">
+    <h1 class="text-4xl font-bold mb-4">Tic Tac Toe</h1>
+    <div class="flex justify-between items-center mb-4">
+      <div class="mr-4">
+        <input id="player1Name" type="text" class="border border-gray-300 p-2 rounded-md" placeholder="Player 1 Name" value="Player 1"><br>
+        <span class="ml-2">Wins: <span id="player1Wins">0</span></span>
+      </div>
+      <div>
+        <input id="player2Name" type="text" class="border border-gray-300 p-2 rounded-md" placeholder="Player 2 Name" value="Player 2"><br>
+        <span class="ml-2">Wins: <span id="player2Wins">0</span></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-board mx-auto w-full max-w-xs md:max-w-md">
+    <div class="box text-4xl font-bold" data-index="0"></div>
+    <div class="box text-4xl font-bold" data-index="1"></div>
+    <div class="box text-4xl font-bold" data-index="2"></div>
+    <div class="box text-4xl font-bold" data-index="3"></div>
+    <div class="box text-4xl font-bold" data-index="4"></div>
+    <div class="box text-4xl font-bold" data-index="5"></div>
+    <div class="box text-4xl font-bold" data-index="6"></div>
+    <div class="box text-4xl font-bold" data-index="7"></div>
+    <div class="box text-4xl font-bold" data-index="8"></div>
+  </div>
+
+  <div class="mt-6">
+    <button id="resetButton" class="bg-blue-500 text-white px-4 py-2 rounded-md">Reset Game</button>
+  </div>
+</body>
+</html>
